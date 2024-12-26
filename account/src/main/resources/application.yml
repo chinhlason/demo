@@ -1,0 +1,25 @@
+server:
+  port: 2000
+
+spring:
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      connect-timeout: 2000
+
+keycloak:
+  realm: account
+  auth-server-url: http://localhost:8080
+  ssl-required: none
+  resource: ticketbk
+  use-resource-role-mappings: true
+  bearer-only: true
+  principal-attribute: preferred_username
+  credentials:
+    secret: y9zoF3BCun9sP9lOY771Y3VhEykuTuMO
+  admin-username: admin
+  admin-password: admin
+  admin-client-id: admin-cli
+  admin-realm: master
+
